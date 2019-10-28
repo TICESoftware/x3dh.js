@@ -1,0 +1,24 @@
+{
+  "name": "x3dh.js",
+  "version": "1.0.0",
+  "main": "lib/X3DH",
+  "types": "lib/X3DH",
+  "repository": "git@github.com:AnbionApps/x3dh.js.git",
+  "author": "TICE <contact@ticeapp.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "hkdf.js": "git+ssh://git@github.com:AnbionApps/hkdf.js.git",
+    "libsodium-wrappers": "^0.7.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "@types/libsodium-wrappers": "^0.7.6",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
+  }
+}
