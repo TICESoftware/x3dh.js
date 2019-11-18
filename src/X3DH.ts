@@ -86,7 +86,7 @@ export class X3DH {
         const dh3: DH = {ownKeyPair: this.keyMaterial.signedPrekeyPair, remotePublicKey: remoteEphemeralPublicKey};
         let dh4: DH | undefined = undefined;
         if (usedOneTimePrekey) {
-            const oneTimePrekeyPairIndex = this.keyMaterial.oneTimePrekeyPairs.findIndex( value => value.publicKey == usedOneTimePrekey);
+            const oneTimePrekeyPairIndex = this.keyMaterial.oneTimePrekeyPairs.findIndex( value => value.publicKey.join() == usedOneTimePrekey.join());
             if (oneTimePrekeyPairIndex == -1) {
                 throw Error(X3DHError.invalidOneTimePrekey);
             }
