@@ -9,7 +9,7 @@ import {
     crypto_kx_SESSIONKEYBYTES
 } from 'libsodium-wrappers';
 import { KeyMaterial, PublicKey, Signature, PublicKeyMaterial, PrekeyBundle } from './Keys';
-import { deriveHKDFKey } from "hkdf.js";
+import { deriveHKDFKey } from 'sodium-hkdf';
 
 type Bytes = Uint8Array;
 type PrekeySigner = (publicKey: PublicKey) => Signature;

@@ -1,18 +1,26 @@
 {
-  "name": "x3dh.js",
+  "name": "x3dh",
   "version": "1.0.0",
+  "description": "X3DH key agreement protocol based on libsodium",
   "main": "lib/X3DH",
   "types": "lib/X3DH",
-  "repository": "git@github.com:AnbionApps/x3dh.js.git",
-  "author": "TICE <contact@ticeapp.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TICESoftware/x3dh.js.git"
+  },
+  "author": {
+    "name": "TICE Software UG (haftungsbeschraenkt)",
+    "email": "contact@tice-software.com",
+    "url": "https://tice.software"
+  },
   "license": "MIT",
-  "private": true,
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc --build"
   },
   "dependencies": {
-    "hkdf.js": "git+ssh://git@github.com:AnbionApps/hkdf.js.git",
-    "libsodium-wrappers": "^0.7.6"
+    "libsodium-wrappers": "^0.7.6",
+    "sodium-hkdf": "^1.0.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.19",
