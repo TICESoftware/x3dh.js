@@ -1,6 +1,6 @@
 {
   "name": "x3dh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "X3DH key agreement protocol based on libsodium",
   "main": "lib/X3DH",
   "types": "lib/X3DH",
