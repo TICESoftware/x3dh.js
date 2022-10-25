@@ -49,7 +49,7 @@ test('keyAgreementInvalidSignature', async () => {
     // [Alice fetches Bob's prekey bundle]
     try {
         const keyAgreementInitiation = await alice.initiateKeyAgreement(bobPrekeyBundle, () => false, info);
-    } catch(error) {
+    } catch(error: any) {
         expect(error.message).toMatch(X3DHError.invalidPrekeySignature);
     }
 });
